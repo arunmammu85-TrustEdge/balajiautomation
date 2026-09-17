@@ -657,3 +657,7 @@ header.shrink .brand img {
   border-radius: 12px;
   margin-bottom: 24px;
 }
+
+@media (max-width: 768px) {
+  .fab-top { display: none !important; }
+}
