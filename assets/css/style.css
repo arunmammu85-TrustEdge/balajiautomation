@@ -629,3 +629,31 @@ header.shrink .brand img {
 }
 #value-services .value-item:hover { transform: translateY(-4px); }
 #value-services .value-item h4 { color: #0f172a !important; font-weight: 700; margin-bottom: 16px; }
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+.service-row {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 0;
+}
+.service-row:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.08);
+}
+.service-row img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
