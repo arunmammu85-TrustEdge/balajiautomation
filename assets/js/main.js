@@ -183,4 +183,58 @@ document.addEventListener('DOMContentLoaded', () => {
     counterObserver.observe(counter);
   });
 
+  // ─── Re-run counters on hero-meta mouseover ──────────────────────────────
+  const heroMeta = document.querySelector('.hero-meta');
+  if (heroMeta) {
+    heroMeta.addEventListener('mouseenter', () => {
+      heroMeta.querySelectorAll('.num[data-target]').forEach(counter => {
+        animateCounter(counter);
+      });
+    });
+  }
+
+  // ─── Re-run word animation on hero h1 mouseover ──────────────────────────
+  const heroH1 = document.querySelector('.hero-text-box h1');
+  if (heroH1) {
+    heroH1.addEventListener('mouseenter', () => {
+      const words = heroH1.querySelectorAll('.w');
+      words.forEach(w => {
+        w.style.animation = 'none';
+        w.offsetHeight; // force reflow
+        w.style.animation = '';
+      });
+    });
+  }
+
+  // ─── Hero Slider with Dots ───────────────────────────────────────────────
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots   = document.querySelectorAll('.hero-dot');
+  let current  = 0;
+  let timer    = null;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  function startAuto() {
+    clearInterval(timer);
+    timer = setInterval(() => goTo(current + 1), 6000);
+  }
+
+  // Dot click
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      goTo(+dot.dataset.index);
+      startAuto(); // restart timer
+    });
+  });
+
+  // Init
+  goTo(0);
+  startAuto();
+
 });

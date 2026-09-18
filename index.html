@@ -41,16 +41,43 @@
 <!-- ============ HOME ============ -->
 <div id="home">
   <section class="hero">
-    <div class="wrap">
-      <div class="eyebrow">INDUSTRIAL AUTOMATION &amp; CONTROLS</div>
-      <h1>Complete solutions in industrial automation, <span class="hl">since 1990.</span></h1>
-      <p class="lead">A Bangalore-based engineering team delivering PLC, SCADA, and control-panel systems for chemical, steel, mining, automotive and manufacturing plants across India — with 18+ years of expert, honest service.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#contact">Get in touch →</a>
-        <a class="btn btn-ghost" href="#products">View products</a>
-      </div>
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background-image: url('assets/images/hero_bg.webp');"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/indus1.webp');"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/indus2.webp');"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/indus3.webp');"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/indus5.webp');"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/indus6.webp');"></div>
+      <div class="hero-slide" style="background-image: url('images/steel_hq.webp');"></div>
+      <div class="hero-slide" style="background-image: url('images/chemical_hq.webp');"></div>
+      <div class="hero-slide" style="background-image: url('images/fmcg_hq.webp');"></div>
+      <div class="hero-slide" style="background-image: url('images/automobile_hq.webp');"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-dots" id="heroDots">
+      <span class="hero-dot active" data-index="0"></span>
+      <span class="hero-dot" data-index="1"></span>
+      <span class="hero-dot" data-index="2"></span>
+      <span class="hero-dot" data-index="3"></span>
+      <span class="hero-dot" data-index="4"></span>
+      <span class="hero-dot" data-index="5"></span>
+      <span class="hero-dot" data-index="6"></span>
+      <span class="hero-dot" data-index="7"></span>
+      <span class="hero-dot" data-index="8"></span>
+      <span class="hero-dot" data-index="9"></span>
+    </div>
+    <div class="hero-text-box">
+      <div class="eyebrow">INDUSTRIAL AUTOMATION &amp; CONTROLS<span class="hero-dot-blink" style="margin-left: 2px;">.</span></div>
+      <h1>
+        <span class="w" style="animation-delay:0.2s">Complete</span>
+        <span class="w" style="animation-delay:0.4s">solutions</span>
+        <span class="w" style="animation-delay:0.6s">in</span>
+        <span class="w" style="animation-delay:0.8s">industrial</span>
+        <span class="w" style="animation-delay:1.0s">automation,</span>
+        <span class="hl"><span class="w" style="animation-delay:1.2s">since</span>
+        <span class="w" style="animation-delay:1.4s">1990</span></span>
+      </h1>
       <div class="hero-meta">
-        <div><div class="num" data-target="1990">0</div><div class="lbl">Company founded</div></div>
         <div><div class="num" id="exp-counter" data-target="18" data-suffix="+">0</div><div class="lbl">Years of expertise</div></div>
         <div><div class="num" data-target="15" data-suffix="+">0</div><div class="lbl">Industries served</div></div>
         <div><div class="num" data-target="20" data-suffix="+">0</div><div class="lbl">Marquee client accounts</div></div>
@@ -60,15 +87,15 @@
 
   <section id="who-we-are" style="background:#ffffff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding: 80px 0;">
     <div class="wrap">
-      <div style="text-align: center; max-width: 700px; margin: 0 auto 64px;">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 48px;">
         <div class="eyebrow" style="justify-content: center;">WHO WE ARE</div>
-        <h2 style="font-size:clamp(32px,4vw,44px);">Mission-critical control systems, delivered with engineering discipline.</h2>
+        <h2 style="font-size:clamp(28px,4vw,40px);">Mission-critical control systems, delivered with engineering discipline.</h2>
         <p class="lead" style="color:var(--text-dim); margin-top:16px;">Our engineering and project management approach positions us to deliver mission-critical automation projects at competitive prices and world-class quality. We continually strive to be a value-added partner whose work meaningfully improves our clients' operations.</p>
       </div>
       <div class="card-grid">
         <div class="card">
           <h3>Turn-key solutions</h3>
-          <p>Design through hand-over — hardware, software, field engineering support and site acceptance tests, all under one roof.</p>
+          <p>Design through hand-over &mdash; hardware, software, field engineering support and site acceptance tests, all under one roof.</p>
         </div>
         <div class="card">
           <h3>System analysis &amp; optimization</h3>
@@ -79,7 +106,7 @@
           <p>Efficient on-line and off-line support throughout the project, and continued support post-commissioning.</p>
         </div>
       </div>
-      <div class="strip">
+      <div class="strip" style="margin-top:32px;">
         <span class="chip">Chemical</span>
         <span class="chip">Steel</span>
         <span class="chip">Mining</span>
@@ -99,6 +126,7 @@
       <div class="eyebrow">ABOUT US</div>
       <h2>Providing expert &amp; honest service since 1990.</h2>
       <h3>Our history</h3>
+      <p>A Bangalore-based engineering team delivering PLC, SCADA, and control-panel systems for chemical, steel, mining, automotive and manufacturing plants across India — with 18+ years of expert, honest service.</p>
       <p>Balaji Automation is a world-class expert in delivering industrial automation and control systems. Our engineering and project-management approach positions us to deliver mission-critical projects at competitive prices and world-class quality.</p>
       <p>This commitment to excellence extends across every stage of a project. Our domain knowledge across various industries, combined with our controls and engineering expertise, makes us the obvious choice for our customers.</p>
       <p>We continually strive to be a value-added company whose services significantly improve our clients' business.</p>
