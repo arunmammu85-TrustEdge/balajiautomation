@@ -528,7 +528,7 @@ section.tight { padding: 48px 0; }
   .brand-text .tag { font-size: 4.8px !important; margin-top: 0; white-space: nowrap; }
   .nav-toggle { padding: 6px; border: none !important; color: #ffffff !important; }
   .nav-toggle svg { width: 19px; height: 19px; }
-  .hero { min-height: 65vh; padding-top: 100px; padding-bottom: 80px; }
+  .hero { min-height: 80vh; padding-top: 120px; padding-bottom: 80px; }
   .hero-slide[data-slide="1"] { background-size: contain !important; background-position: top center !important; background-repeat: no-repeat !important; background-color: #0f172a !important; }
   
   .hero-text-box { margin-left: 12px; margin-right: 12px; top: 16px; padding: 12px 14px; }
