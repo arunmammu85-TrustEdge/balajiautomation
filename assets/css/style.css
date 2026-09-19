@@ -378,7 +378,7 @@ section.tight { padding: 48px 0; }
 }
 
 @media (max-width: 768px) {
-  header { margin: 6px 10px 0; }
+  header, header.shrink { margin: 0; border-radius: 0; width: 100%; }
   .brand { gap: 6px; }
   .brand img { height: 28px; }
   .brand-text .name { font-size: 11px; letter-spacing: 0; }
