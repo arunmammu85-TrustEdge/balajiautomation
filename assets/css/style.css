@@ -91,7 +91,7 @@ img { max-width: 100%; display: block; border-radius: 4px; }
 /* Header */
 header {
   position: sticky; top: 0; z-index: 50;
-  background: linear-gradient(90deg, #3b2410 0%, #5c3317 60%, #3b2410 100%);
+  background: linear-gradient(90deg, rgba(2, 132, 199, 0.4) 0%, rgba(15, 23, 42, 0.9) 25%, rgba(15, 23, 42, 0.9) 75%, rgba(13, 148, 136, 0.4) 100%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -104,8 +104,35 @@ header.shrink {
   margin: 0;
   border-radius: 0;
 }
-.brand img { background: transparent; border-radius: 0; padding: 0; height: 42px; transition: height 0.3s ease; }
-header .brand-text .name { color: #f4c87a !important; }
+@keyframes pulseLogo {
+  0% { opacity: 0.3; transform: scale(0.95); box-shadow: 0 0 5px rgba(244, 200, 122, 0.2); }
+  100% { opacity: 1; transform: scale(1.05); box-shadow: 0 0 15px rgba(244, 200, 122, 0.8); }
+}
+.brand img { 
+  background: transparent; 
+  border-radius: 50%; 
+  padding: 0; 
+  height: 42px; 
+  transition: height 0.3s ease;
+  animation: pulseLogo 2.5s ease-in-out infinite alternate;
+}
+@keyframes shineGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+header .brand-text .name { 
+  font-family: 'Orbitron', sans-serif !important; 
+  font-weight: 900 !important; 
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 30%, #f4c87a 70%, #ff0844 100%);
+  background-size: 300% 300%;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  filter: drop-shadow(0 0 8px rgba(244, 200, 122, 0.5));
+  animation: shineGradient 4s ease infinite;
+}
 header .brand-text .tag  { color: rgba(255,255,255,0.6) !important; }
 header nav a { color: rgba(255,255,255,0.82) !important; }
 header nav a:hover { color: #f4c87a !important; background: transparent !important; }
@@ -243,15 +270,60 @@ section.tight { padding: 48px 0; }
   animation-name: kenBurnsReverse;
 }
 
-/* Hero Dots */
-.hero-dots {
+/* Hero Controls */
+.hero-controls {
   position: absolute;
   bottom: 32px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
   z-index: 3;
+}
+
+.hero-dots {
+  display: flex;
+  gap: 12px;
+}
+
+.speed-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 8px 16px;
+  border-radius: 24px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.3);
+  opacity: 0.95;
+  transition: opacity 0.3s, transform 0.2s;
+}
+.speed-control:hover { opacity: 1; transform: scale(1.02); }
+
+.speed-control input[type=range] {
+  width: 100px;
+  height: 4px;
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.speed-control input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+.speed-control input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.3);
 }
 
 .hero-dot {

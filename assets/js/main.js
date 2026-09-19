@@ -214,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dots   = document.querySelectorAll('.hero-dot');
   let current  = 0;
   let timer    = null;
+  let slideInterval = 6000;
 
   function goTo(index) {
     slides[current].classList.remove('active');
@@ -225,7 +226,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function startAuto() {
     clearInterval(timer);
-    timer = setInterval(() => goTo(current + 1), 6000);
+    timer = setInterval(() => goTo(current + 1), slideInterval);
+  }
+
+  const speedSlider = document.getElementById('heroSpeed');
+  if (speedSlider) {
+    speedSlider.addEventListener('input', (e) => {
+      const val = parseInt(e.target.value);
+      slideInterval = 12000 - (val * 1000);
+      startAuto();
+    });
   }
 
   // Dot click
