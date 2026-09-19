@@ -416,6 +416,25 @@ section.tight { padding: 48px 0; }
   .foot-row { gap: 8px; justify-content: center; text-align: center; }
   footer p, .site-cred, footer .foot-links a { font-size: 11px; margin: 0; }
   footer .foot-links { gap: 12px; }
+
+  /* Global Layout & Text Reductions for Mobile (10-15%) */
+  body, p, li, .lead, .card p, .why-item p, .service-row ul, .contact-cell .val { font-size: 14px !important; }
+  h2, .sec-head h2 { font-size: 26px !important; }
+  h3, .card h3, .why-item h3, .service-row h3 { font-size: 18px !important; }
+  
+  section { padding: 48px 0 !important; }
+  section.tight { padding: 32px 0 !important; }
+  .wrap { padding: 0 16px; }
+  
+  .card, .why-item, .value-item { padding: 20px !important; }
+  .p-item .cap { padding: 12px !important; font-size: 13px !important; }
+  .service-row { padding: 24px 0 !important; gap: 16px !important; }
+  
+  .sec-head { margin-bottom: 32px !important; }
+  .split { gap: 32px !important; }
+  .btn { font-size: 13px !important; padding: 10px 20px !important; }
+  
+  .glass-float { padding: 32px 24px !important; }
 }
 
 .hero-actions { margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap; }
