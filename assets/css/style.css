@@ -213,7 +213,7 @@ nav a.active { color: #ffffff; background: transparent; box-shadow: none; }
   header nav a.active { background: rgba(2, 132, 199, 0.08) !important; color: var(--accent) !important; border-bottom-color: transparent !important; }
   header nav a:hover { background: rgba(2, 132, 199, 0.05) !important; color: var(--accent) !important; }
   .nav-toggle { display: block; position: relative; z-index: 100; transition: color 0.3s; }
-  .nav-toggle.open { color: var(--text) !important; border-color: var(--line-bright); }
+  .nav-toggle.open { color: #ffffff !important; border: none !important; }
 }
 
 /* Page Sections */
@@ -521,15 +521,15 @@ section.tight { padding: 48px 0; }
 }
 
 @media (max-width: 768px) {
-  header, header.shrink { margin: 0; border-radius: 0; width: 100%; background: rgba(15, 23, 42, 0.95); }
+  header, header.shrink { position: fixed; top: 0; z-index: 100; margin: 0; border-radius: 0; width: 100%; background: rgba(15, 23, 42, 0.95); }
   .brand { gap: 8px; }
   .brand img { height: 36px; }
   .brand-text .name { font-size: 14px; letter-spacing: 0; }
   .brand-text .tag { font-size: 4.8px !important; margin-top: 0; white-space: nowrap; }
-  .nav-toggle { padding: 6px 10px; }
-  .nav-toggle svg { width: 22px; height: 22px; }
+  .nav-toggle { padding: 6px; border: none !important; color: #ffffff !important; }
+  .nav-toggle svg { width: 19px; height: 19px; }
   .hero { min-height: 65vh; padding-top: 100px; padding-bottom: 80px; }
-  .hero-slide[data-slide="1"] { background-position: center center !important; }
+  .hero-slide[data-slide="1"] { background-size: contain !important; background-position: top center !important; background-repeat: no-repeat !important; background-color: #0f172a !important; }
   
   .hero-text-box { margin-left: 12px; margin-right: 12px; top: 16px; padding: 12px 14px; }
   .hero-text-box .eyebrow { font-size: 10px; margin-bottom: 8px; }
