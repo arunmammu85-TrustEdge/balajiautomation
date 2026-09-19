@@ -85,6 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const navMenu = document.getElementById('navMenu');
       if(navMenu) navMenu.classList.remove('open');
+      const nToggle = document.getElementById('navToggle');
+      if(nToggle) nToggle.classList.remove('open');
     });
   });
 
@@ -93,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if(navToggle) {
     navToggle.addEventListener('click', ()=>{
       document.getElementById('navMenu').classList.toggle('open');
+      navToggle.classList.toggle('open');
     });
   }
 
