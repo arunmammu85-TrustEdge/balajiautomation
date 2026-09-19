@@ -378,10 +378,24 @@ section.tight { padding: 48px 0; }
 }
 
 @media (max-width: 768px) {
-  .hero-text-box { margin-left: 16px; margin-right: 16px; top: 24px; padding: 18px 20px; }
-  .hero-meta { flex-wrap: wrap; padding: 16px 20px; }
-  .hero-meta div { flex: 0 0 50%; border-right: none; padding: 8px 12px; }
-  .hero-meta .num { font-size: 28px; }
+  header { margin: 6px 12px 0; }
+  .brand { gap: 8px; }
+  .brand img { height: 32px; }
+  .brand-text .name { font-size: 13px; letter-spacing: 0; }
+  .brand-text .tag { font-size: 8px; margin-top: 0; }
+  .nav-toggle { padding: 6px 8px; }
+  .nav-toggle svg { width: 18px; height: 18px; }
+  
+  .hero-text-box { margin-left: 12px; margin-right: 12px; top: 16px; padding: 12px 14px; }
+  .hero-text-box .eyebrow { font-size: 10px; margin-bottom: 8px; }
+  .hero-text-box .eyebrow::before { width: 20px; }
+  .hero-text-box h1 { font-size: 18px !important; }
+  
+  .hero-meta { flex-wrap: nowrap; padding: 8px 0; margin-top: 8px; justify-content: space-between; }
+  .hero-meta div { flex: 1; border-right: 1px solid rgba(255,255,255,0.15); padding: 0 4px; text-align: center; }
+  .hero-meta div:last-child { border-right: none; }
+  .hero-meta .num { font-size: 16px; }
+  .hero-meta .lbl { font-size: 7px; letter-spacing: 0; line-height: 1.1; }
 }
 
 .hero-actions { margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap; }
