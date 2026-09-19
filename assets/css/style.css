@@ -378,13 +378,13 @@ section.tight { padding: 48px 0; }
 }
 
 @media (max-width: 768px) {
-  header { margin: 6px 12px 0; }
-  .brand { gap: 8px; }
-  .brand img { height: 32px; }
-  .brand-text .name { font-size: 13px; letter-spacing: 0; }
-  .brand-text .tag { font-size: 8px; margin-top: 0; }
-  .nav-toggle { padding: 6px 8px; }
-  .nav-toggle svg { width: 18px; height: 18px; }
+  header { margin: 6px 10px 0; }
+  .brand { gap: 6px; }
+  .brand img { height: 28px; }
+  .brand-text .name { font-size: 11px; letter-spacing: 0; }
+  .brand-text .tag { font-size: 7px; margin-top: 0; }
+  .nav-toggle { padding: 4px 6px; }
+  .nav-toggle svg { width: 16px; height: 16px; }
   
   .hero-text-box { margin-left: 12px; margin-right: 12px; top: 16px; padding: 12px 14px; }
   .hero-text-box .eyebrow { font-size: 10px; margin-bottom: 8px; }
