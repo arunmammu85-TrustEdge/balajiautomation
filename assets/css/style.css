@@ -519,7 +519,7 @@ section.tight { padding: 48px 0; }
 }
 
 @media (max-width: 768px) {
-  header, header.shrink { margin: 0; border-radius: 0; width: 100%; }
+  header, header.shrink { margin: 0; border-radius: 0; width: 100%; background: rgba(15, 23, 42, 0.95); }
   .brand { gap: 8px; }
   .brand img { height: 36px; }
   .brand-text .name { font-size: 14px; letter-spacing: 0; }
