@@ -133,7 +133,19 @@ header .brand-text .name {
   filter: drop-shadow(0 0 8px rgba(244, 200, 122, 0.5));
   animation: shineGradient 4s ease infinite;
 }
-header .brand-text .tag  { color: rgba(255,255,255,0.6) !important; }
+header .brand-text .tag  { 
+  font-family: 'Orbitron', sans-serif !important; 
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2em !important;
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  opacity: 0.9;
+  margin-top: 4px;
+}
 header nav a { color: rgba(255,255,255,0.82) !important; }
 header nav a:hover { color: #f4c87a !important; background: transparent !important; }
 header nav a.active { color: #ffffff !important; background: rgba(255,255,255,0.15) !important; box-shadow: none !important; }
@@ -149,7 +161,7 @@ header nav a.active { color: #ffffff !important; background: rgba(255,255,255,0.
 .brand img { height: 50px; width: auto; transition: height 0.3s ease; }
 .brand-text { display: flex; flex-direction: column; }
 .brand-text .name { font-family: 'Montserrat'; font-weight: 800; font-size: 19px; letter-spacing: 0.02em; color: var(--accent); }
-.brand-text .tag { font-size: 11px; color: var(--text-dim); letter-spacing: 0.1em; font-weight: 600; text-transform: uppercase; margin-top: 2px;}
+.brand-text .tag { font-size: 11px; color: var(--text-dim); letter-spacing: 0.1em; font-weight: 600; text-transform: uppercase; margin-top: 2px; white-space: normal; line-height: 1.3; max-width: 500px; }
 
 nav ul { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; }
 nav a {
@@ -412,6 +424,35 @@ section.tight { padding: 48px 0; }
   from { opacity: 0; transform: translateY(14px); filter: blur(4px); }
   to   { opacity: 1; transform: translateY(0);    filter: blur(0); }
 }
+
+.hero-tech-tags {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  white-space: nowrap;
+}
+.tech-tag {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 0 4px rgba(0,0,0,0.8);
+  transition: transform 0.2s, text-shadow 0.2s;
+}
+.tech-tag:hover { 
+  transform: translateY(-2px); 
+  text-shadow: 0 4px 12px rgba(0,0,0,1), 0 0 8px currentColor; 
+}
+.tech-tag.c1 { color: #ff4d6d; } /* Bright Rose */
+.tech-tag.c2 { color: #38bdf8; } /* Bright Sky Blue */
+.tech-tag.c3 { color: #34d399; } /* Bright Emerald */
+.tech-tag.c4 { color: #fbbf24; } /* Bright Amber */
+.tech-tag.c5 { color: #a78bfa; } /* Bright Violet */
+.tech-tag.c6 { color: #2dd4bf; } /* Bright Teal */
+.tech-tag.c7 { color: #f43f5e; } /* Bright Red */
 
 .hero-dot-blink {
   color: #ff2020;
