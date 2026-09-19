@@ -528,6 +528,8 @@ section.tight { padding: 48px 0; }
   .brand-text .tag { font-size: 5.4px !important; margin-top: 0; }
   .nav-toggle { padding: 6px 10px; }
   .nav-toggle svg { width: 22px; height: 22px; }
+  .hero { min-height: 65vh; padding-top: 100px; padding-bottom: 80px; }
+  .hero-slide[data-slide="1"] { background-position: center center !important; }
   
   .hero-text-box { margin-left: 12px; margin-right: 12px; top: 16px; padding: 12px 14px; }
   .hero-text-box .eyebrow { font-size: 10px; margin-bottom: 8px; }
