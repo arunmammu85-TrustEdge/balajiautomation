@@ -525,7 +525,7 @@ section.tight { padding: 48px 0; }
   .brand { gap: 8px; }
   .brand img { height: 36px; }
   .brand-text .name { font-size: 14px; letter-spacing: 0; }
-  .brand-text .tag { font-size: 5.4px !important; margin-top: 0; }
+  .brand-text .tag { font-size: 4.8px !important; margin-top: 0; white-space: nowrap; }
   .nav-toggle { padding: 6px 10px; }
   .nav-toggle svg { width: 22px; height: 22px; }
   .hero { min-height: 65vh; padding-top: 100px; padding-bottom: 80px; }
