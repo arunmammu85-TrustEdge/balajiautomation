@@ -411,6 +411,11 @@ section.tight { padding: 48px 0; }
   .hero-meta div:last-child { border-right: none; }
   .hero-meta .num { font-size: 16px; }
   .hero-meta .lbl { font-size: 7px; letter-spacing: 0; line-height: 1.1; }
+  
+  footer { padding: 12px 0; }
+  .foot-row { gap: 8px; justify-content: center; text-align: center; }
+  footer p, .site-cred, footer .foot-links a { font-size: 11px; margin: 0; }
+  footer .foot-links { gap: 12px; }
 }
 
 .hero-actions { margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap; }
