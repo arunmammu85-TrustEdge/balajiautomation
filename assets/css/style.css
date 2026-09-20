@@ -913,14 +913,14 @@ footer .foot-links a:hover { color: var(--accent); }
 
 
 /* Brand Rows */
-.brand-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-top: 32px; border: none; background: transparent; box-shadow: none; overflow: visible; }
-.brand-row { padding: 24px 32px; border-bottom: 1px solid var(--line-bright); transition: background 0.3s ease; }
+.brand-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 32px; border: none; background: transparent; box-shadow: none; overflow: visible; }
+.brand-row { padding: 16px 20px; border-bottom: 1px solid var(--line-bright); border-radius: 8px; transition: background 0.3s ease; }
 .brand-row:last-child { border-bottom: 1px solid rgba(0,0,0,0.05); }
 .brand-row:nth-child(odd) { background: #ffffff; }
 .brand-row:nth-child(even) { background: #f8fafc; }
 .brand-row:hover { background: #f1f5f9; }
-.brand-row h4 { font-size: 20px; color: var(--accent); margin-bottom: 12px; }
-.brand-row .cat-row { margin-bottom: 6px; padding: 10px 14px; border-radius: 8px; line-height: 1.6; font-size: 15px; color: var(--text); }
+.brand-row h4 { font-size: 18px; color: var(--accent); margin-bottom: 8px; }
+.brand-row .cat-row { margin-bottom: 4px; padding: 8px 10px; border-radius: 6px; line-height: 1.5; font-size: 13px; color: var(--text); }
 .brand-row .cat-row:nth-child(odd) { background: rgba(0,0,0,0.02); border-left: 3px solid rgba(0,0,0,0.05); }
 .brand-row .cat-row:nth-child(even) { background: transparent; border-left: 3px solid transparent; }
 .brand-row .cat-row:last-child { margin-bottom: 0; }
@@ -965,7 +965,7 @@ header.shrink .brand img {
   transform: translateY(0);
 }
 
-.brand-row .brand-logo { height: 40px; width: auto; max-width: 100%; margin-bottom: 24px; display: block; object-fit: contain; }
+.brand-row .brand-logo { height: 32px; width: auto; max-width: 100%; margin-bottom: 16px; display: block; object-fit: contain; }
 
 #contact {
   background: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.75)), url('../images/contact_bg.webp') center/cover no-repeat;
