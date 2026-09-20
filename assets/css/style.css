@@ -195,7 +195,7 @@ nav a.active { color: #ffffff; background: transparent; box-shadow: none; }
     height: auto;
     border-bottom-left-radius: 12px;
     padding-bottom: 12px;
-    width: 280px;
+    width: 200px;
     background: #ffffff;
     box-shadow: -5px 0 25px rgba(0,0,0,0.15);
     display: block !important;
